@@ -1,103 +1,107 @@
 <!DOCTYPE html>
 <html lang="fr">
 
-<head>
-  <meta charset="UTF-8"/>
-  <title>Portraits 2 Passages</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <meta name="keywords" content=""/>
-  <meta name="description" content=""/>
-  <meta name="author" content="Nicolas Burger"/>
-  <meta name="copyright" content="©Portraits 2 Passages | 2022"/>
-  <link rel="canonical" href="https://portraits2passages.eu"/>
-
-  <!-- Facebook and Twitter integration -->
-  <meta property="og:title" content="Portraits 2 Passages"/>
-  <meta property="og:type" content="website"/>
-  <meta property="og:image" content="assets/img/portraits2passages.jpg"/>
-  <meta property="og:url" content="https://portraits2passages.eu"/>
-  <meta property="og:site_name" content="Portraits 2 Passages"/>
-  <meta property="og:description" content="Portraits 2 Passages"/>
-  <meta name="twitter:site" content="@p2passages"/>
-  <meta name="twitter:title" content="Portraits 2 Passages"/>
-  <meta name="twitter:image" content="assets/img/portraits2passages.jpg"/>
-  <meta name="twitter:url" content="https://portraits2passages.eu"/>
-  <meta name="twitter:card" content="Portraits 2 Passages"/>
-
-
-  <!-- CSS -->
-  <link rel="stylesheet" href="css/main.css"/>
-
-  <!-- FICHIERS -->
-  <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon-16x16.png">
-
-  <!-- CDN  -->
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
-        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous"/>
-
-  <link href="https://fonts.googleapis.com/css?family=Titillium+Web:400,700&display=swap" rel="stylesheet">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="js/language.js"></script>
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Portraits 2 Passages</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <meta name="author" content="Portraits 2 Passages" />
+    <meta name="copyright" content="©Portraits 2 Passages | 2021" />
+    <link rel="canonical" href="https://portraits2passages.eu" />
+  
+    <meta property="og:title" content="Portraits 2 Passages" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="../img/hitchhiking.jpg" />
+    <meta property="og:url" content="https://portraits2passages.eu" />
+    <meta property="og:site_name" content="Portraits 2 Passages" />
+    <meta property="og:description"
+      content="Portraits 2 Passages website" />
+    <meta name="twitter:site" content="@p2passages" />
+    <meta name="twitter:title" content="Portraits 2 Passages" />
+    <meta name="twitter:url" content="https://portraits2passages.eu/" />
+    <meta name="twitter:card"
+      content="Portraits 2 Passages website" />
+  
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/main.css" />
+  
+    <!-- FICHIERS -->
+    <link rel="icon" type="image/png" sizes="32x32" href="../img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../img/favicon-16x16.png">
+  
+    <!-- CDN  -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/css?family=Titillium+Web:400,700&display=swap" rel="stylesheet">
+    <script src="../js/language.js"></script>
+  </head>
 
 <body>
-<div class="wrapper">
-  <div class="inside-wrapper">
-    <nav>
-      <div class="logo-container">
-        <span class="font-w-700">
-          <a id="intl-index-home" href="index.html">Home</a>
-        </span>
-      </div>
-      <div class="flags-container">
-        <ul>
-          <li>
-            <img alt="fr-FR" class="flag" src="assets/img/flags/fr.svg" onclick="chooseLanguage('fr-FR', true)"/>
-          </li>
-          <li>
-            <img alt="en-GB" class="flag" src="assets/img/flags/gb.svg" onclick="chooseLanguage('en-GB')"/>
-          </li>
-        </ul>
-      </div>
-    </nav>
-    <div class="main-container not-found-container">
-      <div><span id="intl-404-not-found">Page not found.</span></div>
-      <div class="not-found-image"><img alt="profile-picture" src="assets/img/404.jpg"/></div>
-      <div><a id="intl-404-go-back-Home" href="index.html">Go back home</a></div>
-    </div>
-  </div>
-</div>
+  <nav class="top-bar">
+    <span class="logo font-w-700"><a href="index.html">Portraits 2 Passages</a></span>
 
-<footer>
-  <div>©Portraits 2 Passages 2022</div>
-  <div>
-    <a href="legals.html" id="intl-footer-legals">Legals</a>
+    <div class="nav-container">
+      <input class="menu-btn" type="checkbox" id="menu-btn" />
+      <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+      <ul class="menu">
+      </ul>
+    </div>
+  </nav>
+
+  <div class="main-container-404">
+    <p id='intl-404-notFound'>Page not found.</p>
+    <p><a id='intl-404-goBackHome' href='/index.html'>Go back home</a></p>
   </div>
-  <div>
-    <ul>
-      <li>
-        <a href="mailto:contact@portraits2passages.eu" title="contact@portraits2passages.eu">
-          <i class="fas fa-envelope" style="width:20px"> </i>
-        </a>
-      </li>
-      <li>
-        <a target="_blank" href="https://www.facebook.com/portraits2passages">
-          <i class="fab fa-facebook" style="width:20px; margin-left: 10px"></i>
-        </a>
-      </li>
-      <li>
-        <a target="_blank" href="https://twitter.com/p2passages">
-          <i class="fab fa-twitter" style="width:20px; margin-left: 10px"></i>
-        </a>
-      </li>
-      <li>
-        <a target="_blank" href="https://www.linkedin.com/company/portraits-2-passages">
-          <i class="fab fa-linkedin" style="width:20px; margin-left: 10px"></i>
-        </a>
-      </li>
-    </ul>
-  </div>
-</footer>
+
+  <footer class="main-footer">
+    <div class="language">
+      <ul>
+        <li>
+          <img alt="fr-FR" class="flag" src="img/flags/fr.svg" onclick="chooseLanguage('fr-FR', true)" />
+        </li>
+        <li>
+          <img alt="en-GB" class="flag" src="img/flags/gb.svg" onclick="chooseLanguage('en-GB')" />
+        </li>
+      </ul>
+      <p>©Portraits 2 Passages 2021</p>
+    </div>
+    <div class="footer-nav">
+      <h4 id="intl-footer-siteMap">Site map</h4>
+      <ul>
+        <li>
+          <a href="web/legals.html" id="intl-footer-legals">Legals</a>
+        </li>
+      </ul>
+    </div>
+    <div class="contact">
+      <ul>
+        <li>
+          <a href="mailto:contact@portraits2passages.eu" title="contact@portraits2passages.eu"><i class="fas fa-paper-plane"
+              style="width:20px"> </i><span id="intl-footer-sendEmail">Send an email</span>
+          </a>
+        </li>
+
+        <li>
+          <a target="_blank" href="https://twitter.com/p2passages"><i class="fab fa-twitter" style="width:20px">
+            </i>Twitter
+          </a>
+        </li>
+
+        <li>
+          <a target="_blank" href="https://linkedin.com/company/portraits-2-passages">
+            <i class="fab fa-linkedin" style="width:20px"> </i>LinkedIn
+          </a>
+        </li>
+        <li>
+          <a target="_blank" href="https://facebook.com/portraits2passages"><i class="fab fa-facebook"
+              style="width:20px"> </i>Facebook
+          </a>
+        </li>
+      </ul>
+    </div>
+  </footer>
 </body>
+
 </html>
