@@ -1,28 +1,30 @@
 {
-  "name": "portraits2passages.eu",
+  "name": "nicolasburger.fr",
   "version": "1.0.0",
   "description": "",
   "main": "",
-  "directories": {
-    "doc": "doc"
-  },
   "scripts": {
-    "start": "node-sass ./sass/general.scss ./css/main.css",
-    "watch": "nodemon -e scss -x \"npm start\"",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node-sass ./sass/general.scss ./css/main.css --output-style compressed",
+    "compile-css": "nodemon -e scss -x \"npm start\"",
+    "lint": "eslint . --ext .js --fix",
+    "compress-img": "node ./js/compressImages.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/portraits2passages/portraits2passages.eu.git"
+    "url": "git+https://github.com/burgerni10/nicolasburger.fr.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/portraits2passages/portraits2passages.eu/issues"
+    "url": "https://github.com/burgerni10/nicolasburger.fr/issues"
   },
-  "homepage": "https://github.com/portraits2passages/portraits2passages.eu#readme",
+  "homepage": "https://github.com/burgerni10/nicolasburger.fr#readme",
   "devDependencies": {
-    "node-sass": "4.12.0",
-    "nodemon": "1.19.3"
+    "compress-images": "2.0.4",
+    "eslint": "8.4.1",
+    "eslint-plugin-html": "6.2.0",
+    "eslint-plugin-import": "2.25.3",
+    "node-sass": "7.0.0",
+    "nodemon": "2.0.15"
   }
 }
